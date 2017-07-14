@@ -9,7 +9,7 @@
 
     <!-- Enable debug information from all modules that use `debug` -->
     <!-- See https://github.com/visionmedia/debug#browser-support -->
-    <script>window.localStorage.debug = '*';</script>
+    <script>window.localStorage.debug = process.env['DEBUG'];</script>
 
     <script src="./app.js"></script>
   </head>
